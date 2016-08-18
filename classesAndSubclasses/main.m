@@ -7,11 +7,32 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "buildIng.h"
+#import "house.h"
+#import "office.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
+     
+       
+        buildIng *building = [[buildIng alloc] initWithName:@"Test Name"];
+        
+        
+        NSLog(@"building name is %@", [building name]);
+        
+        house *house = [[house alloc] initWithName:@"white house" color:@"white"];
+        
+        
+        NSLog(@"House one is called %@ and is the color %@", [house name], [house  color]);
+        
+        office *office = [[office alloc] initWithName:@"The Office" numberOfEmployes:@5];
+        
+        
+        
+        
+        
+        
     }
+    
     return 0;
 }
